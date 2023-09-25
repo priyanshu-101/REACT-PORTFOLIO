@@ -13,6 +13,11 @@ import Resume from './Pages/Resume';
 import Projects from './Pages/Projects';
 import Skillset from './Pages/Skillset';
 
+import "./App.css";
+// import "./style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
 
 import Navigation from './components/Navbar/Navigation';
 
@@ -26,6 +31,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/resume' element={<Resume/>}/>
         <Route path='/project' element={<Projects/>}/>
+        <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
     </Router>
   );
